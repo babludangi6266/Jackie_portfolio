@@ -4,7 +4,7 @@ export const contactInfo = {
   emailPersonal: "Jackie.mohanty2012@gmail.com",
   phone: "+91 96502 80857",
   website: "https://lexatechnologies.com",
-  linkedin: "https://linkedin.com/in/jackiemohanty",
+  linkedin: "https://www.linkedin.com/in/jackie-mohanty-9214391b2/",
   calendly: "https://calendly.com/jackiemohanty",
 };
 
@@ -31,7 +31,7 @@ export const footer = {
     { label: "Contact", href: "#contact" },
   ],
   social: [
-    { label: "LinkedIn", href: "https://linkedin.com/in/jackiemohanty", icon: "linkedin" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/jackie-mohanty-9214391b2/", icon: "linkedin" },
     { label: "Email", href: "mailto:jackie@lexatechnologies.com", icon: "email" },
   ],
   copyright: "© 2026 Jackie Mohanty.",
@@ -81,7 +81,7 @@ export const personalInfo = {
     "/1783325367649.jpg.jpeg",
   ],
   photo: "/jackie_img.png",
-  linkedin: "https://linkedin.com/in/jackiemohanty",
+  linkedin: "https://www.linkedin.com/in/jackie-mohanty-9214391b2/",
   email: "jackie@lexatechnologies.com",
   phone: "+91 96502 80857",
   location: "Bhubaneswar, Odisha, India",

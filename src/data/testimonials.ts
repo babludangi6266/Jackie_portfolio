@@ -4,28 +4,28 @@ export const testimonials = [
     name: "Gurdeep Mann",
     role: "Global Sales & Business Development Leader",
     quote: "If there was an award for asking questions, Jackie would've won it. His curiosity and willingness to learn are what truly set him apart. Watching him build LEXA has been exciting, and I'm confident he'll achieve great things.",
-    image: "/1783501507592.jpg.jpeg",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=120&auto=format&fit=crop",
   },
   {
     id: "aruna",
     name: "Aruna Sahoo",
     role: "Senior BD & Sales Professional",
     quote: "Jackie consistently demonstrated ownership, professionalism, and an eagerness to learn. He quickly adapts, collaborates well, and delivers quality work.",
-    image: "/1780298350078.jpg.jpeg",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=120&auto=format&fit=crop",
   },
   {
     id: "siba",
     name: "Siba Pratim Dash",
     role: "Founder, Summer70 Learning Hub",
     quote: "Jackie developed our complete web platform and mobile application with professionalism, technical expertise, and exceptional dedication. His leadership and problem-solving abilities make him someone I highly recommend.",
-    image: "/Screenshot_2026-07-10-18-34-49-42_1c337646f29875672b5a61192b9010f9.jpg.jpeg",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=120&auto=format&fit=crop",
   },
   {
     id: "bhagya",
     name: "Bhagya Prasad Reddy",
     role: "Business Development Leader",
     quote: "Jackie adapts quickly, communicates clearly, and brings professionalism into every interaction. He would be an asset to any organization.",
-    image: "/1780627915192.jpg.jpeg",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=120&auto=format&fit=crop",
   },
 ];
 

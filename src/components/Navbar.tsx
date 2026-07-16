@@ -34,14 +34,27 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-sm border-b border-dark-100' : 'bg-transparent'
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-4 ${
+      isScrolled ? 'pt-4' : 'pt-6'
     }`}>
-      <Container>
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          <a href="#home" className="text-xl font-bold text-dark-900">JM</a>
+      <div className={`mx-auto max-w-6xl transition-all duration-500 rounded-2xl ${
+        isScrolled 
+          ? 'bg-white/80 backdrop-blur-md shadow-lg border border-dark-200/80 px-6 py-2.5' 
+          : 'bg-transparent px-4 py-0'
+      }`}>
+        <div className="flex items-center justify-between h-14">
+          <a 
+            href="#home" 
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('#home');
+            }}
+            className="text-xl font-bold text-dark-900 tracking-tight hover:text-primary-600 transition-colors"
+          >
+            JM
+          </a>
           
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-7">
             {navItems.map((item) => (
               <a
                 key={item.label}
@@ -50,7 +63,7 @@ export const Navbar = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="text-sm font-medium text-dark-600 hover:text-primary-600 transition-colors"
+                className="text-xs font-bold text-dark-600 hover:text-primary-600 transition-colors uppercase tracking-wider"
               >
                 {item.label}
               </a>
@@ -61,17 +74,17 @@ export const Navbar = () => {
           </div>
 
           <button
-            className="lg:hidden p-2 rounded-lg text-dark-600 hover:bg-dark-100"
+            className="lg:hidden p-2 rounded-xl text-dark-600 hover:bg-dark-100/60"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-expanded={isMobileMenuOpen}
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             )}
@@ -79,8 +92,8 @@ export const Navbar = () => {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-dark-100 animate-slide-down">
-            <div className="flex flex-col gap-4">
+          <div className="lg:hidden py-4 border-t border-dark-100/60 mt-2 animate-slide-down">
+            <div className="flex flex-col gap-3">
               {navItems.map((item) => (
                 <a
                   key={item.label}
@@ -89,18 +102,18 @@ export const Navbar = () => {
                     e.preventDefault();
                     scrollToSection(item.href);
                   }}
-                  className="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors"
+                  className="px-4 py-2 text-sm font-semibold text-dark-600 hover:text-primary-600 hover:bg-primary-50 rounded-xl transition-colors"
                 >
                   {item.label}
                 </a>
               ))}
-              <Button variant="primary" className="w-full mt-2" onClick={() => scrollToSection('#contact')}>
+              <Button variant="primary" className="w-full mt-1" onClick={() => scrollToSection('#contact')}>
                 Let's Connect
               </Button>
             </div>
           </div>
         )}
-      </Container>
+      </div>
     </nav>
   );
 };

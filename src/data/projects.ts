@@ -30,11 +30,11 @@ export const projects = [
     liveWebsite: "#",
     googlePlay: "#",
     gallery: [
-      "/Screenshot 2026-07-15 003500.png",
-      "/Screenshot 2026-07-15 003633.png",
-      "/Screenshot 2026-07-15 003653.png",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=1200&auto=format&fit=crop",
     ],
-    architecture: "/Screenshot_2026-07-10-18-34-49-42_1c337646f29875672b5a61192b9010f9.jpg.jpeg",
+    architecture: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1200&auto=format&fit=crop",
     testimonial: {
       author: "Siba Pratim Dash",
       role: "Founder, Summer70 Learning Hub",
@@ -75,11 +75,11 @@ export const projects = [
     technologies: ["Node.js", "React", "MongoDB", "Cloud", "Role-based Architecture"],
     outcome: "The ERP transformed multiple disconnected manual workflows into one centralized operational platform, improving visibility, efficiency, and collaboration across departments.",
     screenshots: [
-      "/1780298350078.jpg.jpeg",
-      "/1780627915192.jpg.jpeg",
-      "/1780627914625.jpg.jpeg",
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop",
     ],
-    architecture: "/1783325367649.jpg.jpeg",
+    architecture: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
   },
   {
     id: "lexa-crm",
@@ -107,8 +107,8 @@ export const projects = [
     ],
     outcome: "Provided a centralized operating system for managing sales, operations, and delivery while improving visibility and decision-making.",
     screenshots: [
-      "/1783325367277.jpg.jpeg",
-      "/1783325367352.jpg.jpeg",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1200&auto=format&fit=crop",
     ],
   },
   {
@@ -135,7 +135,7 @@ export const projects = [
     ],
     outcome: "Enabled patients to discover services, book appointments, and interact with the clinic through a professional digital experience.",
     screenshots: [
-      "/1783501507592.jpg.jpeg",
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop",
     ],
   },
 ];

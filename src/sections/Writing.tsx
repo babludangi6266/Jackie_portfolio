@@ -11,7 +11,7 @@ const articles = [
     date: "April 2026",
     readTime: "3 min read",
     tags: ["#FounderLife", "#BuildInPublic", "#Sales", "#ERP", "#LEXA"],
-    linkedinUrl: "https://linkedin.com/in/jackiemohanty",
+    linkedinUrl: "https://www.linkedin.com/in/jackie-mohanty-9214391b2/",
     content: `March was hard. Really hard. We made only ₹25,000 that entire month from a website development project. And honestly? I don’t want to fake success online. Because right now, we’re not doing anything “huge.” We’re just… building.
 
 Till the end of April, closing sales felt almost impossible. At one point, I was handling: Sales, Content, Social media, Client calls, Project management, Company growth, Team coordination. Everything. Alone. And trust me, being a founder sounds exciting until you become the marketer, designer, sales guy, project manager, and customer support… all in the same day.
@@ -35,7 +35,7 @@ This startup journey is weird. One month, you question everything. Next month, y
     date: "March 2026",
     readTime: "2 min read",
     tags: ["#ITConsulting", "#Edtech", "#BuildingInPublic", "#LEXA"],
-    linkedinUrl: "https://linkedin.com/in/jackiemohanty",
+    linkedinUrl: "https://www.linkedin.com/in/jackie-mohanty-9214391b2/",
     content: `As cliche as that sounds for LinkedIn, it’s actually true and sometimes even I can't believe it!
 
 I had started posting on LinkedIn in an attempt to grow my own IT firm which I left my job for. And at first, it sucked. I got into an accident, drained my savings to pay for vehicle repairs. Couldn’t afford my own apartment so had to move in with my brother. Coded a website for a cafe under a tree with my co-founder, didn’t even get paid for it.
@@ -60,7 +60,7 @@ Working on this edtech platform with my co-founder Bablu Dangi has been a great 
     date: "June 2026",
     readTime: "3 min read",
     tags: ["#BuildWithAI", "#GDG", "#GoogleCloud", "#AI", "#LEXA"],
-    linkedinUrl: "https://linkedin.com/in/jackiemohanty",
+    linkedinUrl: "https://www.linkedin.com/in/jackie-mohanty-9214391b2/",
     content: `One unexpected conversation at Google Cloud's "Build with AI" event taught me a lesson no YouTube video or startup book ever could... One of my favourite moments from Google's Build with AI Bhubaneswar 2026 didn't happen on stage. It happened during the lunch break.
 
 Earlier that day, I had attended an insightful session by Abhijit Tripathy, Chairman & Managing Director of Presear Softwares Pvt Ltd. His session on "Agentic RAG - Build Your Own Enterprise Knowledge Assistant" was packed with practical insights on how enterprises can leverage AI to build smarter, more reliable knowledge systems. As someone building an AI-first technology company, I was taking notes almost the entire time.
