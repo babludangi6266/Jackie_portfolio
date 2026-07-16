@@ -29,6 +29,27 @@ export const events = [
     linkedinPost: "#",
   },
   {
+    id: "gdg-build-with-ai",
+    name: "Google Cloud Build with AI Bhubaneswar 2026",
+    date: "June 2026",
+    organizer: "Google Developer Groups (GDG) & GDG Cloud Bhubaneswar",
+    location: "Bhubaneswar, Odisha, India",
+    about: "Participated in Google Cloud's 'Build with AI' event in Bhubaneswar. Attended deep technical sessions, including an insightful session on 'Agentic RAG - Build Your Own Enterprise Knowledge Assistant' by Abhijit Tripathy (CMD of Presear Softwares), which provided practical guidance on leveraging AI for enterprise knowledge systems.",
+    keyLearnings: [
+      "Understand whether the market actually needs a product/feature before building it",
+      "Research the customer problem deeply before designing solutions",
+      "Enterprise Agentic RAG integration strategies and system design"
+    ],
+    peopleConnected: [
+      "Abhijit Tripathy",
+      "Abhijit's team"
+    ],
+    gallery: [
+      "/1783325367649.jpg.jpeg"
+    ],
+    linkedinPost: "#"
+  },
+  {
     id: "gdg",
     name: "Google Developer Groups",
     date: "Upcoming",

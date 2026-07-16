@@ -4,11 +4,13 @@ import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/sections/Hero';
 import { About } from '@/sections/About';
+import { Timeline } from '@/sections/Timeline';
 import { Experience } from '@/sections/Experience';
 import { Skills } from '@/sections/Skills';
 import { Projects } from '@/sections/Projects';
 import { Community } from '@/sections/Community';
 import { Testimonials } from '@/sections/Testimonials';
+import { Writing } from '@/sections/Writing';
 import { Contact } from '@/sections/Contact';
 
 export default function App() {
@@ -18,11 +20,13 @@ export default function App() {
       <main className="pt-20">
         <Hero />
         <About />
+        <Timeline />
         <Experience />
         <Skills />
         <Projects />
         <Community />
         <Testimonials />
+        <Writing />
         <Contact />
       </main>
       <Footer />
