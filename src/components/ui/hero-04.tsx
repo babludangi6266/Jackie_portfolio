@@ -5,9 +5,7 @@ import { motion, useReducedMotion, type Variants } from 'motion/react'
 import Balancer from 'react-wrap-balancer'
 
 import { cn } from '@/lib/utils'
-
 import { Cta, type CtaProps } from '@/components/ui/hero-04-utils/cta'
-import { ArtCollage } from '@/components/ui/hero-04-utils/art-collage'
 
 export interface Hero04Props {
   title: string
@@ -15,9 +13,7 @@ export interface Hero04Props {
   titleLine2?: string
   description: string
   primaryImage: string
-  secondaryImage: string
   primaryAlt?: string
-  secondaryAlt?: string
   animation?: 'none' | 'subtle'
   primaryCTA: CtaProps
   secondaryCTA?: CtaProps
@@ -26,18 +22,16 @@ export interface Hero04Props {
 
 const variantStyles = {
   standard: {
-    section: 'pt-8 pb-16 sm:pt-10 sm:pb-24',
-    title: 'text-3xl sm:text-4xl md:text-5xl',
+    section: 'pt-10 pb-16 sm:pt-14 sm:pb-24',
+    title: 'text-4xl sm:text-5xl md:text-6xl',
     description: 'max-w-md text-sm sm:text-base',
     header: 'gap-5',
-    grid: 'gap-12 lg:gap-16',
   },
   compact: {
     section: 'py-14 sm:py-20',
-    title: 'text-2xl sm:text-3xl md:text-4xl',
+    title: 'text-3xl sm:text-4xl md:text-5xl',
     description: 'max-w-sm text-sm',
     header: 'gap-4',
-    grid: 'gap-10 lg:gap-12',
   },
 } as const
 
@@ -92,9 +86,7 @@ export function Hero04({
   description,
   washImage,
   primaryImage,
-  secondaryImage,
   primaryAlt = '',
-  secondaryAlt = '',
   animation = 'none',
   primaryCTA,
   secondaryCTA,
@@ -104,87 +96,114 @@ export function Hero04({
   const animate = animation === 'subtle' && !reduce
   const vs = variantStyles[variant]
 
-  const backgroundElement = washImage && (
-    <div
-      aria-hidden
-      className="pointer-events-none absolute inset-0 z-0 aspect-2/3 mask-radial-[75%_100%] mask-radial-from-45% mask-radial-to-75% mask-radial-at-top opacity-75 blur-xl md:aspect-square lg:aspect-video dark:opacity-5"
-    >
-      <img
-        src={washImage}
-        alt=""
-        className="h-full w-full object-cover object-top"
-      />
+  const backgroundElement = (
+    <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+      {/* Premium dark grid overlay */}
+      <div className="absolute inset-0 bg-[#080b11] bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:32px_32px]" />
+      
+      {/* Animating spotlight lights */}
+      <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-gradient-to-br from-primary-500/10 to-blue-500/0 rounded-full blur-3xl" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[60%] h-[60%] bg-gradient-to-br from-blue-500/10 to-primary-500/0 rounded-full blur-3xl" />
+    </div>
+  )
+
+  const badgeElement = (
+    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-950/40 border border-primary-500/30 text-primary-300 text-[10px] sm:text-xs font-semibold mb-2 tracking-wide uppercase">
+      <span className="w-1.5 h-1.5 rounded-full bg-green-400 block animate-pulse" />
+      Available for Advisory & Software Consulting
     </div>
   )
 
   const titleElement = title && (
-    <h1
-      className={cn(
-        'text-foreground font-serif font-normal tracking-tight text-balance',
-        vs.title,
-      )}
-    >
-      <Balancer>{title}</Balancer>
+    <div className="space-y-2">
+      <h1
+        className={cn(
+          'text-white font-serif font-bold tracking-tight text-balance leading-none',
+          vs.title,
+        )}
+      >
+        <Balancer>{title}</Balancer>
+      </h1>
       {titleLine2 && (
-        <>
-          <br />
-          <Balancer>{titleLine2}</Balancer>
-        </>
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-primary-200 to-blue-400 font-sans text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold tracking-tight block pt-1">
+          {titleLine2}
+        </span>
       )}
-    </h1>
+    </div>
   )
 
   const descriptionElement = description && (
-    <p className={cn('text-muted-foreground', vs.description)}>
+    <p className={cn('text-dark-300 leading-relaxed max-w-lg mt-4 text-xs sm:text-sm md:text-base', vs.description)}>
       <Balancer>{description}</Balancer>
     </p>
   )
 
   const ctasElement = (primaryCTA?.ctaEnabled || secondaryCTA?.ctaEnabled) && (
-    <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-3">
+    <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-3">
       {primaryCTA?.ctaEnabled && <Cta cta={primaryCTA} />}
       {secondaryCTA?.ctaEnabled && (
         <Cta
-          cta={{ ...secondaryCTA, variant: secondaryCTA.variant ?? 'link' }}
+          cta={{ ...secondaryCTA, variant: secondaryCTA.variant ?? 'glassOutline' }}
         />
       )}
     </div>
   )
 
+  // Single portrait media element - styled cleanly with neon backing glow
   const mediaElement = (
-    <ArtCollage
-      primaryImage={primaryImage}
-      secondaryImage={secondaryImage}
-      primaryAlt={primaryAlt}
-      secondaryAlt={secondaryAlt}
-    />
+    <div className="relative w-full max-w-[260px] sm:max-w-[290px] aspect-[3/4] select-none mx-auto lg:mr-0 lg:ml-auto group">
+      {/* Glow shadow behind image */}
+      <div className="absolute -inset-2 bg-gradient-to-r from-primary-500 to-blue-500 rounded-2xl blur-xl opacity-20 group-hover:opacity-35 transition-opacity duration-500" />
+      
+      {/* Portrait Image directly */}
+      <img
+        src={primaryImage}
+        alt={primaryAlt || "Jackie Mohanty"}
+        className="w-full h-full object-cover rounded-2xl shadow-2xl relative z-10 border border-white/5 transition-transform duration-500 group-hover:scale-[1.02]"
+      />
+
+      {/* Floating decorative capsule badge */}
+      <div className="absolute -bottom-4 -left-4 bg-dark-950/90 backdrop-blur-md border border-white/10 rounded-xl px-4 py-2 shadow-lg z-20 flex items-center gap-2">
+        <span className="text-base leading-none">📈</span>
+        <div>
+          <p className="text-[8px] text-dark-400 font-semibold uppercase leading-none">Consulting</p>
+          <p className="text-[10px] font-bold text-white mt-0.5 leading-none">10+ Projects Delivered</p>
+        </div>
+      </div>
+    </div>
   )
 
   return (
-    <section className="bg-background relative isolate w-full overflow-hidden">
+    <section className="relative isolate w-full overflow-hidden bg-[#080b11]">
       {backgroundElement}
 
       <motion.div
         className={cn(
-          'relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-center px-6 lg:grid-cols-2',
+          'relative z-10 mx-auto grid grid-cols-1 lg:grid-cols-12 items-center px-6 gap-10 lg:gap-12',
           vs.section,
-          vs.grid,
         )}
         variants={animate ? container : undefined}
         initial={animate ? 'hidden' : false}
         whileInView={animate ? 'visible' : undefined}
         viewport={{ once: true, margin: '-80px' }}
       >
+        {/* Left Column (65% to 70% content width) */}
         <Reveal
           active={animate}
-          className={cn('flex flex-col items-start', vs.header)}
+          className={cn('flex flex-col items-start lg:col-span-8', vs.header)}
         >
+          {badgeElement}
           {titleElement}
           {descriptionElement}
           {ctasElement}
         </Reveal>
 
-        <Reveal active={animate} variants={mediaItem} className="w-full">
+        {/* Right Column (30% width portrait card) */}
+        <Reveal 
+          active={animate} 
+          variants={mediaItem} 
+          className="w-full lg:col-span-4 flex justify-center lg:justify-end"
+        >
           {mediaElement}
         </Reveal>
       </motion.div>

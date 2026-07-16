@@ -94,7 +94,7 @@ export const Skills = () => {
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {/* Frontend & Mobile */}
                 <div>
-                  <h4 className="text-xs font-bold text-dark-900 uppercase tracking-wider mb-2 border-b border-dark-200/60 pb-1">Interfaces</h4>
+                  <h4 className="text-xs font-bold text-dark-900 uppercase tracking-wider mb-2 border-b border-dark-200/60 pb-1">Frontend</h4>
                   <div className="flex flex-wrap gap-1.5">
                     {techStack.frontend.core.concat(techStack.frontend.frameworks).concat(techStack.mobile).map((tech) => (
                       <Badge key={tech} variant="outline" className="text-[9px] py-0.5 border-dark-200 bg-white">{tech}</Badge>
@@ -104,7 +104,7 @@ export const Skills = () => {
 
                 {/* Backend & Databases */}
                 <div>
-                  <h4 className="text-xs font-bold text-dark-900 uppercase tracking-wider mb-2 border-b border-dark-200/60 pb-1">Backends & Data</h4>
+                  <h4 className="text-xs font-bold text-dark-900 uppercase tracking-wider mb-2 border-b border-dark-200/60 pb-1">Backend</h4>
                   <div className="flex flex-wrap gap-1.5">
                     {techStack.backend.languages.concat(techStack.backend.api).concat(techStack.database).map((tech) => (
                       <Badge key={tech} variant="outline" className="text-[9px] py-0.5 border-dark-200 bg-white">{tech}</Badge>

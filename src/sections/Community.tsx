@@ -180,15 +180,14 @@ export const Community = () => {
         {upcomingEvents.length > 0 && (
           <div className="max-w-6xl mx-auto">
             <h3 className="text-center text-lg font-bold text-dark-900 mb-6 uppercase tracking-widest text-primary-600">
-              Upcoming Conferences & Events
+              Conferences & Events
             </h3>
             
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {upcomingEvents.map((event) => (
                 <Card key={event.id} variant="outlined" padding="sm" className="bg-white border-dark-200/80 hover:border-primary-300 transition-all duration-300 flex flex-col justify-between h-full">
                   <div>
-                    <div className="flex items-center justify-between mb-2">
-                      <Badge variant="primary" className="text-[8px] uppercase tracking-wider py-0.5">Upcoming</Badge>
+                    <div className="flex items-center justify-end mb-2">
                       <span className="text-[9px] text-dark-500 font-semibold">{event.date}</span>
                     </div>
                     <h4 className="text-xs font-bold text-dark-900 leading-snug mb-1">{event.name}</h4>
