@@ -17,8 +17,9 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <main className="pt-20">
+      <main>
         <Hero />
+        <div className="pt-0">
         <About />
         <Timeline />
         <Experience />
@@ -28,6 +29,7 @@ export default function App() {
         <Testimonials />
         <Writing />
         <Contact />
+        </div>
       </main>
       <Footer />
     </div>

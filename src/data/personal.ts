@@ -188,31 +188,31 @@ export const careerHighlights = [
 ];
 
 export const timeline = [
-  {
-    role: "Business Development Executive",
-    company: "Yudiz Solutions",
-    period: "January 2025",
-    description: "My first professional role in the IT industry. Here, I learned the fundamentals of business development, technology sales, lead generation, CRM systems, and digital outreach. This experience laid the foundation for everything that followed.",
-  },
-  {
-    role: "Business Development & Client Relations",
-    company: "Adventa Tech Inc.",
-    period: "June 2025",
-    description: "Worked closely with recruitment and staffing teams serving the United States market. This role enhanced my understanding of client communication, relationship management, and recruitment operations.",
-  },
-  {
-    role: "Business Development | Growth & Partnerships",
-    company: "ESSPL",
-    period: "October 2025",
-    description: "Worked with enterprise organizations to identify opportunities where automation, enterprise software, analytics, and digital transformation could improve business operations. This role significantly strengthened my understanding of enterprise software ecosystems.",
-  },
-  {
+    {
     role: "Founder",
     company: "LEXA Technologies",
     period: "January 2026 – Present",
     description: "Building digital products, consulting businesses, leading product delivery, and continuously expanding expertise in AI, SaaS, enterprise systems, and technology strategy.",
     current: true,
   },
+    {
+    role: "Business Development | Growth & Partnerships",
+    company: "ESSPL",
+    period: "October 2025",
+    description: "Worked with enterprise organizations to identify opportunities where automation, enterprise software, analytics, and digital transformation could improve business operations. This role significantly strengthened my understanding of enterprise software ecosystems.",
+  },
+    {
+    role: "Business Development & Client Relations",
+    company: "Adventa Tech Inc.",
+    period: "June 2025",
+    description: "Worked closely with recruitment and staffing teams serving the United States market. This role enhanced my understanding of client communication, relationship management, and recruitment operations.",
+  },
+  {
+    role: "Business Development Executive",
+    company: "Yudiz Solutions",
+    period: "January 2025",
+    description: "My first professional role in the IT industry. Here, I learned the fundamentals of business development, technology sales, lead generation, CRM systems, and digital outreach. This experience laid the foundation for everything that followed.",
+  }
 ];
 
 export const careerOverview = "Every professional experience has shaped how I think about technology, business, and execution. Rather than following a traditional technical career path, my journey began from the business side of technology—understanding client requirements, identifying operational challenges, and consulting businesses on digital solutions. Working across multiple technology companies exposed me to diverse industries, enterprise software, automation platforms, ERP systems, recruitment technologies, SaaS products, and digital transformation initiatives. These experiences gradually expanded my perspective beyond sales into consulting, product thinking, workflow analysis, and solution architecture. Today, I continue building upon these experiences by leading digital product initiatives while constantly learning emerging technologies and refining how businesses leverage technology for sustainable growth.";

@@ -5,6 +5,7 @@ export const projects = [
     name: "Summer70 Learning Hub",
     industry: "EdTech",
     timeline: "January 2026 – March 2026",
+    Link:"https://summer70.com/",
     overview: "Summer70 Learning Hub is a comprehensive digital learning ecosystem designed to help Class 9 and 10 students complete a significant portion of their syllabus during summer vacations through structured online learning. The platform consists of a Student Web Portal, Android Application, Admin Dashboard, Subscription Platform, Assessment Engine, and Learning Management System.",
     businessChallenge: "The client required an affordable yet scalable platform capable of supporting thousands of students while providing Video Streaming, Online Assessments, Progress Tracking, Subscription Management, Content Management, and Doubt Resolution.",
     myContribution: "I led the project from product discovery to delivery. Responsibilities included Requirement Discovery, Product Planning, Sprint Planning, Feature Prioritization, Workflow Architecture, Client Communication, Project Coordination, and Delivery Management.",
@@ -30,11 +31,8 @@ export const projects = [
     liveWebsite: "#",
     googlePlay: "#",
     gallery: [
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=1200&auto=format&fit=crop",
+      "/summer70.png?q=80&w=1200&auto=format&fit=crop",
     ],
-    architecture: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1200&auto=format&fit=crop",
     testimonial: {
       author: "Siba Pratim Dash",
       role: "Founder, Summer70 Learning Hub",
@@ -47,6 +45,7 @@ export const projects = [
     name: "Custom Manufacturing ERP",
     industry: "Manufacturing",
     timeline: "2025",
+    Link:"https://erp-excel.tech/login",
     overview: "Designed and delivered a customized ERP platform for a manufacturing company to digitize operations across procurement, production, inventory, quality control, dispatch, and reporting.",
     modules: [
       "CRM",
@@ -75,11 +74,9 @@ export const projects = [
     technologies: ["Node.js", "React", "MongoDB", "Cloud", "Role-based Architecture"],
     outcome: "The ERP transformed multiple disconnected manual workflows into one centralized operational platform, improving visibility, efficiency, and collaboration across departments.",
     screenshots: [
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop",
+      "/excel-erp.png?q=80&w=1200&auto=format&fit=crop"
     ],
-    architecture: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+
   },
   {
     id: "lexa-crm",
@@ -87,6 +84,7 @@ export const projects = [
     name: "LEXA CRM & Workflow Platform",
     industry: "Internal SaaS",
     timeline: "2025 - Present",
+     Link:"https://lexa-crm.lexatechnologies.com/login",
     overview: "An internal operating platform developed to manage LEXA's complete business lifecycle—from lead generation to project delivery.",
     modules: [
       "Lead Management",
@@ -107,8 +105,7 @@ export const projects = [
     ],
     outcome: "Provided a centralized operating system for managing sales, operations, and delivery while improving visibility and decision-making.",
     screenshots: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1200&auto=format&fit=crop",
+      "/lexa-crm.jpeg?q=80&w=1200&auto=format&fit=crop"
     ],
   },
   {
@@ -117,6 +114,7 @@ export const projects = [
     name: "SM2 Health & Aesthetics",
     industry: "Healthcare",
     timeline: "2025",
+     Link:"https://sm2healthandaesthetics.com/",
     overview: "Healthcare platform developed for improving patient experience and clinic operations.",
     features: [
       "Appointment Booking",
@@ -135,7 +133,7 @@ export const projects = [
     ],
     outcome: "Enabled patients to discover services, book appointments, and interact with the clinic through a professional digital experience.",
     screenshots: [
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop",
+      "/sm2.png?q=80&w=1200&auto=format&fit=crop"
     ],
   },
 ];

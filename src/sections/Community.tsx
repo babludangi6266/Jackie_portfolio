@@ -75,9 +75,9 @@ export const Community = () => {
                 />
                 {/* Visual hover caption overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-950/80 via-dark-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3 pointer-events-none">
-                  <p className="text-[10px] sm:text-xs font-bold text-white leading-tight">
+                  {/* <p className="text-[10px] sm:text-xs font-bold text-white leading-tight">
                     {image.alt}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             ))}

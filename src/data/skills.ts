@@ -1,16 +1,16 @@
 export const techStack = {
   frontend: {
     core: ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript"],
-    frameworks: ["React.js", "Next.js (Learning)", "Flutter (Application Architecture)", "Tailwind CSS", "Bootstrap"],
+    frameworks: ["React.js", "Next.js", "Flutter", "Tailwind CSS", "Angular" , "Vue.js"],
   },
   backend: {
-    languages: ["Node.js", "Express.js"],
-    api: ["REST APIs", "JWT Authentication", "Role-based Access", "Middleware Architecture"],
+    languages: ["Node.js", "Java" , "ASP.NET" , "GoLang" , "php"],
+    api: ["python"],
   },
-  database: ["MongoDB", "MySQL", "PostgreSQL (Learning)", "Firebase Firestore"],
-  mobile: ["Flutter", "Firebase", "Android Deployment", "Google Play Console"],
-  cloud: ["Firebase", "Cloudinary", "Bunny.net CDN", "Hostinger VPS", "Linux Server Management", "cPanel", "DNS Configuration", "SSL Deployment"],
-  devops: ["Git", "GitHub", "VPS Deployment", "Domain Management", "Production Deployment", "Environment Configuration", "CI/CD (Learning)"],
+  database: ["MongoDB", "MySQL", "PostgreSQL (Learning)", "Oracle" ],
+  mobile: ["Flutter", "Firebase", "Android Deployment", "React Native" ],
+  cloud: ["Firebase", "Cloudinary", "Bunny.net CDN", "Hostinger VPS", "Linux Server Management"],
+  devops: ["Git", "GitHub"],
   ai: [
     "Generative AI",
     "AI Agents",

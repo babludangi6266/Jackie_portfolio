@@ -147,6 +147,13 @@ export const Projects = () => {
                   {selectedProject.timeline && (
                     <Badge variant="dark" className="text-xs py-1 px-3">{selectedProject.timeline}</Badge>
                   )}
+                  {selectedProject.Link && (
+                    <a href={selectedProject.Link} target="_blank" rel="noopener noreferrer" className="inline-flex">
+                      <Badge variant="primary" className="text-xs py-1 px-3 cursor-pointer hover:bg-primary-200 transition-colors">
+                        Visit Website
+                      </Badge>
+                    </a>
+                  )}
                 </div>
 
                 {/* Situation, Challenge, Approach, Technology, Outcome formatted story */}

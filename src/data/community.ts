@@ -23,7 +23,7 @@ export const events = [
       "Jagan Kumar Hotta",
     ],
     gallery: [
-      "/1783325367277.jpg.jpeg",
+      "/1780627914625.jpg.jpeg",
       "/1783325367352.jpg.jpeg",
     ],
     linkedinPost: "#",
@@ -52,7 +52,6 @@ export const events = [
   {
     id: "gdg",
     name: "Google Developer Groups",
-    date: "Upcoming",
     organizer: "Google Developer Groups",
     location: "Bhubaneswar",
     about: "Upcoming community event with Google Developer Groups focusing on modern web technologies, AI/ML, and cloud platforms.",
@@ -65,7 +64,6 @@ export const events = [
   {
     id: "tie",
     name: "TiE Bhubaneswar",
-    date: "Upcoming",
     organizer: "TiE Bhubaneswar",
     location: "Bhubaneswar",
     about: "TiE Bhubaneswar events connecting entrepreneurs, investors, and mentors in the startup ecosystem.",
@@ -78,7 +76,6 @@ export const events = [
   {
     id: "echai",
     name: "eChai Ventures",
-    date: "Upcoming",
     organizer: "eChai Ventures",
     location: "Multiple Cities",
     about: "eChai Ventures startup community events for networking, learning, and fundraising.",
@@ -91,7 +88,6 @@ export const events = [
   {
     id: "wtc",
     name: "World Trade Center Sessions",
-    date: "Upcoming",
     organizer: "World Trade Center",
     location: "Bhubaneswar",
     about: "World Trade Center sessions on international trade, business expansion, and global partnerships.",
@@ -104,7 +100,6 @@ export const events = [
   {
     id: "startup-odisha",
     name: "Startup Odisha",
-    date: "Upcoming",
     organizer: "Startup Odisha",
     location: "Odisha",
     about: "Government of Odisha startup initiatives, funding opportunities, and ecosystem building events.",
@@ -117,7 +112,6 @@ export const events = [
   {
     id: "google-programs",
     name: "Google Programs",
-    date: "Upcoming",
     organizer: "Google",
     location: "Various",
     about: "Google for Startups, Google Cloud, and AI/ML programs and workshops.",

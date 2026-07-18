@@ -49,7 +49,9 @@ export const Navbar = () => {
               e.preventDefault();
               scrollToSection('#home');
             }}
-            className="text-xl font-bold text-dark-900 tracking-tight hover:text-primary-600 transition-colors"
+            className={`text-xl font-bold tracking-tight transition-colors ${
+              isScrolled ? 'text-dark-900 hover:text-primary-600' : 'text-white hover:text-primary-400'
+            }`}
           >
             JM
           </a>
@@ -63,7 +65,9 @@ export const Navbar = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="text-xs font-bold text-dark-600 hover:text-primary-600 transition-colors uppercase tracking-wider"
+                className={`text-xs font-bold transition-colors uppercase tracking-wider ${
+                  isScrolled ? 'text-dark-600 hover:text-primary-600' : 'text-white/70 hover:text-white'
+                }`}
               >
                 {item.label}
               </a>
@@ -74,7 +78,9 @@ export const Navbar = () => {
           </div>
 
           <button
-            className="lg:hidden p-2 rounded-xl text-dark-600 hover:bg-dark-100/60"
+            className={`lg:hidden p-2 rounded-xl ${
+              isScrolled ? 'text-dark-600 hover:bg-dark-100/60' : 'text-white/80 hover:bg-white/10'
+            }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-expanded={isMobileMenuOpen}
             aria-label="Toggle menu"
