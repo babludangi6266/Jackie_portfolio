@@ -67,7 +67,7 @@ export const Hero = () => {
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${videoLoaded ? 'opacity-100' : 'opacity-0'
             }`}
         >
-          <source src="/hero.mp4" type="video/mp4" />
+          <source src="/hero2.mp4" type="video/mp4" />
         </video>
 
         {/* Gradient Overlays for readability */}
@@ -119,6 +119,15 @@ export const Hero = () => {
               style={{ fontSize: 'clamp(0.95rem, 2.2vw, 1.75rem)' }}
             >
               Business Consultant · Project Manager · Product Strategist · Founder
+            </motion.p>
+
+            {/* Industry keywords */}
+            <motion.p
+              variants={animate ? fadeUp : undefined}
+              className="mt-4 sm:mt-5 hero-font font-medium tracking-wide leading-relaxed text-white/40"
+              style={{ fontSize: 'clamp(0.7rem, 1.3vw, 0.95rem)' }}
+            >
+              B2B SaaS • AI • EdTech • HealthTech • Manufacturing • Enterprise Software • ERP • CRM • HRTech • Automation • Supply Chain • Logistics
             </motion.p>
 
             {/* CTAs */}

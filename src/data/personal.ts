@@ -5,7 +5,7 @@ export const contactInfo = {
   phone: "+91 96502 80857",
   website: "https://lexatechnologies.com",
   linkedin: "https://www.linkedin.com/in/jackie-mohanty-9214391b2/",
-  calendly: "https://calendly.com/jackiemohanty",
+  calendly: "https://calendly.com/jackie-mohanty2012/30min?month=2026-07",
 };
 
 export const contactForm = {
@@ -85,7 +85,7 @@ export const personalInfo = {
   email: "jackie@lexatechnologies.com",
   phone: "+91 96502 80857",
   location: "Bhubaneswar, Odisha, India",
-  calendly: "https://calendly.com/jackiemohanty",
+  calendly: "https://calendly.com/jackie-mohanty2012/30min?month=2026-07",
 };
 
 export const rolesICanContribute = [
@@ -188,20 +188,20 @@ export const careerHighlights = [
 ];
 
 export const timeline = [
-    {
+  {
     role: "Founder",
     company: "LEXA Technologies",
     period: "January 2026 – Present",
     description: "Building digital products, consulting businesses, leading product delivery, and continuously expanding expertise in AI, SaaS, enterprise systems, and technology strategy.",
     current: true,
   },
-    {
+  {
     role: "Business Development | Growth & Partnerships",
     company: "ESSPL",
     period: "October 2025",
     description: "Worked with enterprise organizations to identify opportunities where automation, enterprise software, analytics, and digital transformation could improve business operations. This role significantly strengthened my understanding of enterprise software ecosystems.",
   },
-    {
+  {
     role: "Business Development & Client Relations",
     company: "Adventa Tech Inc.",
     period: "June 2025",
